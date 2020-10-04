@@ -16,11 +16,18 @@ enum MealServiceRouter: URLRequestConvertible {
         return URL(fileURLWithPath: "https://www.themealdb.com/api/json/v1/1")
     }
     
-    func asURLRequest() throws -> URLRequest {
+    var parameters: Parameters {
         switch self {
         case .fetchMeal(let query):
-            let path = "/search.php?s=\(query)"
-            return request(baseURL: mainURL, path: path, method: .get)
+            return ["s": query]
+        }
+    }
+    
+    func asURLRequest() throws -> URLRequest {
+        switch self {
+        case .fetchMeal:
+            let path = "/search.php"
+            return request(baseURL: mainURL, path: path, method: .get, parameters: parameters)
         }
     }
     

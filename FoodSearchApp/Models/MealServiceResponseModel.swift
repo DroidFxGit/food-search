@@ -14,12 +14,10 @@ struct MealServiceResponseModel: Codable {
 struct Meal: Codable {
     let idMeal: String
     let strMeal: String
-    let strDrinkAlternate: String?
     let strCategory: String
     let strArea: String
     let strInstructions: String
     let strMealThumb: String
-    let strTags: String?
     let strYoutube: String
     let strIngredient1, strIngredient2, strIngredient3, strIngredient4: String
     let strIngredient5, strIngredient6, strIngredient7, strIngredient8: String
@@ -32,5 +30,4 @@ struct Meal: Codable {
     let strMeasure13, strMeasure14, strMeasure15, strMeasure16: String
     let strMeasure17, strMeasure18, strMeasure19, strMeasure20: String
     let strSource: String
-    let dateModified: String?
 }
