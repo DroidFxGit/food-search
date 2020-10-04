@@ -24,8 +24,9 @@ class RecipeMealCollectionViewCell: UICollectionViewCell {
     func configure(_ model: Meal) {
         configureAppearance()
         
-        let url = URL(fileURLWithPath: model.strMealThumb)
-        imageView.imageFromUrl(url: url)
+        if let url = URL(string: model.strMealThumb) {
+            imageView.imageFromUrl(url: url)
+        }
         nameLabel.text = model.strMeal
         categoryLabel.text = model.strCategory
     }
