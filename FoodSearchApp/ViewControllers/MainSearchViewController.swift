@@ -12,13 +12,29 @@ class MainSearchViewController: UIViewController {
     
     var searchController: UISearchController!
     var viewModel: MainViewModel!
+    var datasource: MainDatasource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        datasource.observe(self) { [weak self] in
+            guard let strongSelf = self else { fatalError("ViewController not found") }
+            DispatchQueue.main.async {
+                strongSelf.collectionView.reloadData()
+            }
+        }
     }
     
     @objc func fetch(query: String) {
         viewModel.fetchRecipe(with: query)
+        setupCollectionView()
+    }
+    
+    fileprivate func setupCollectionView() {
+        collectionView.register(UINib(nibName: "RecipeMealCollectionViewCell", bundle: nil),
+                                forCellWithReuseIdentifier: RecipeMealCollectionViewCell.identifier)
+        collectionView.dataSource = datasource
+        collectionView.delegate = datasource
     }
 }
 
@@ -31,5 +47,6 @@ extension MainSearchViewController: UISearchBarDelegate, UISearchControllerDeleg
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.clearData()
     }
 }

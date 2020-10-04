@@ -42,6 +42,7 @@ final class MainCoordinator: Startable {
         mainSearchView.definesPresentationContext = true
         mainSearchView.searchController = searchVC
         mainSearchView.viewModel = viewModel
+        mainSearchView.datasource = datasource
         
         rootController.viewControllers = [mainSearchView]
         rootController.navigationBar.prefersLargeTitles = true

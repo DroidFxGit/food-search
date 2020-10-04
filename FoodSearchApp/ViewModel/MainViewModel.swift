@@ -30,4 +30,8 @@ struct MainViewModel {
             }
         }
     }
+    
+    func clearData() {
+        datasource?.data.value = []
+    }
 }

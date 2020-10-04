@@ -7,10 +7,10 @@
 
 import UIKit
 
-final class MainDataSourceConcrete: GenericDatasource<Meal> {
+final class MainDataSourceConcrete: GenericDatasource<Meal>, MainDatasource {
     private let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
-    private let itemsPerRow: CGFloat = 2
-    private let kHeightRow: CGFloat = 165
+    private let itemsPerRow: CGFloat = 1
+    private let kHeightRow: CGFloat = 200
     private let kHeightFooter: CGFloat = 20
     
     var onAction: ((Meal) -> Void)?
@@ -19,6 +19,9 @@ final class MainDataSourceConcrete: GenericDatasource<Meal> {
         super.init()
     }
     
+    func observe(_ observer: NSObject, completionHandler: @escaping CompletionHandler) {
+        data.addAndNotify(observer: self, completionHandler: completionHandler)
+    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -31,8 +34,15 @@ final class MainDataSourceConcrete: GenericDatasource<Meal> {
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //TODO: implements cell
-        return UICollectionViewCell()
+        let identifier = RecipeMealCollectionViewCell.identifier
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier,
+                                                            for: indexPath) as? RecipeMealCollectionViewCell else {
+            preconditionFailure("Cannot deque cell")
+        }
+        
+        let model = data.value[indexPath.row]
+        cell.configure(model)
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

@@ -27,6 +27,10 @@
 		9A0B0E3F252A59AF00BF0DA6 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E3E252A59AF00BF0DA6 /* DynamicValue.swift */; };
 		9A0B0E44252A5A0E00BF0DA6 /* GenericDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E43252A5A0E00BF0DA6 /* GenericDatasource.swift */; };
 		9A0B0E4A252A5D7700BF0DA6 /* MainDataSourceConcrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E49252A5D7700BF0DA6 /* MainDataSourceConcrete.swift */; };
+		9A0B0E53252A60E600BF0DA6 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E52252A60E600BF0DA6 /* UIImageView+Extensions.swift */; };
+		9A0B0E5D252A614F00BF0DA6 /* RecipeMealCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E5B252A614F00BF0DA6 /* RecipeMealCollectionViewCell.swift */; };
+		9A0B0E5E252A614F00BF0DA6 /* RecipeMealCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B0E5C252A614F00BF0DA6 /* RecipeMealCollectionViewCell.xib */; };
+		9A0B0E63252A653000BF0DA6 /* MainDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E62252A653000BF0DA6 /* MainDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		9A0B0E3E252A59AF00BF0DA6 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
 		9A0B0E43252A5A0E00BF0DA6 /* GenericDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDatasource.swift; sourceTree = "<group>"; };
 		9A0B0E49252A5D7700BF0DA6 /* MainDataSourceConcrete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSourceConcrete.swift; sourceTree = "<group>"; };
+		9A0B0E52252A60E600BF0DA6 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		9A0B0E5B252A614F00BF0DA6 /* RecipeMealCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeMealCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A0B0E5C252A614F00BF0DA6 /* RecipeMealCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeMealCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A0B0E62252A653000BF0DA6 /* MainDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,7 @@
 		9A0B0DAC252A3AA900BF0DA6 /* FoodSearchApp */ = {
 			isa = PBXGroup;
 			children = (
+				9A0B0E51252A60D100BF0DA6 /* Utils */,
 				9A0B0E08252A479300BF0DA6 /* Core */,
 				9A0B0DE6252A3BDF00BF0DA6 /* Coordinators */,
 				9A0B0E1A252A509B00BF0DA6 /* Models */,
@@ -167,6 +176,7 @@
 		9A0B0DE7252A3BE700BF0DA6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9A0B0E5A252A610600BF0DA6 /* cells */,
 				9A0B0DFE252A410600BF0DA6 /* MainSearchViewController.swift */,
 				9A0B0DFF252A410600BF0DA6 /* MainSearchViewController.xib */,
 			);
@@ -232,8 +242,26 @@
 			children = (
 				9A0B0E43252A5A0E00BF0DA6 /* GenericDatasource.swift */,
 				9A0B0E49252A5D7700BF0DA6 /* MainDataSourceConcrete.swift */,
+				9A0B0E62252A653000BF0DA6 /* MainDatasource.swift */,
 			);
 			path = Datasource;
+			sourceTree = "<group>";
+		};
+		9A0B0E51252A60D100BF0DA6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B0E52252A60E600BF0DA6 /* UIImageView+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9A0B0E5A252A610600BF0DA6 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B0E5B252A614F00BF0DA6 /* RecipeMealCollectionViewCell.swift */,
+				9A0B0E5C252A614F00BF0DA6 /* RecipeMealCollectionViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +369,7 @@
 			files = (
 				9A0B0DBA252A3AAA00BF0DA6 /* LaunchScreen.storyboard in Resources */,
 				9A0B0E01252A410600BF0DA6 /* MainSearchViewController.xib in Resources */,
+				9A0B0E5E252A614F00BF0DA6 /* RecipeMealCollectionViewCell.xib in Resources */,
 				9A0B0DB7252A3AAA00BF0DA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,16 +399,19 @@
 				9A0B0E16252A4B7F00BF0DA6 /* MainViewModel.swift in Sources */,
 				9A0B0DF4252A400B00BF0DA6 /* Startable.swift in Sources */,
 				9A0B0DEC252A3ED700BF0DA6 /* MainCoordinator.swift in Sources */,
+				9A0B0E5D252A614F00BF0DA6 /* RecipeMealCollectionViewCell.swift in Sources */,
 				9A0B0E35252A551200BF0DA6 /* MealServiceConcrete.swift in Sources */,
 				9A0B0E44252A5A0E00BF0DA6 /* GenericDatasource.swift in Sources */,
 				9A0B0E3F252A59AF00BF0DA6 /* DynamicValue.swift in Sources */,
 				9A0B0E0B252A47C800BF0DA6 /* BaseService.swift in Sources */,
 				9A0B0E25252A544800BF0DA6 /* URLRequestConvertible.swift in Sources */,
 				9A0B0E1C252A50EE00BF0DA6 /* MealServiceResponseModel.swift in Sources */,
+				9A0B0E63252A653000BF0DA6 /* MainDatasource.swift in Sources */,
 				9A0B0DAE252A3AA900BF0DA6 /* AppDelegate.swift in Sources */,
 				9A0B0DB0252A3AA900BF0DA6 /* SceneDelegate.swift in Sources */,
 				9A0B0E30252A54A000BF0DA6 /* MealService.swift in Sources */,
 				9A0B0E00252A410600BF0DA6 /* MainSearchViewController.swift in Sources */,
+				9A0B0E53252A60E600BF0DA6 /* UIImageView+Extensions.swift in Sources */,
 				9A0B0E3A252A55F400BF0DA6 /* MealServiceRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
