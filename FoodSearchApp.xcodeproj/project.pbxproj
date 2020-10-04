@@ -9,12 +9,23 @@
 /* Begin PBXBuildFile section */
 		9A0B0DAE252A3AA900BF0DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0DAD252A3AA900BF0DA6 /* AppDelegate.swift */; };
 		9A0B0DB0252A3AA900BF0DA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0DAF252A3AA900BF0DA6 /* SceneDelegate.swift */; };
-		9A0B0DB2252A3AA900BF0DA6 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0DB1252A3AA900BF0DA6 /* MainSearchViewController.swift */; };
-		9A0B0DB5252A3AA900BF0DA6 /* MainSearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B0DB3252A3AA900BF0DA6 /* MainSearchView.storyboard */; };
 		9A0B0DB7252A3AAA00BF0DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B0DB6252A3AAA00BF0DA6 /* Assets.xcassets */; };
 		9A0B0DBA252A3AAA00BF0DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B0DB8252A3AAA00BF0DA6 /* LaunchScreen.storyboard */; };
 		9A0B0DC5252A3AAA00BF0DA6 /* FoodSearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0DC4252A3AAA00BF0DA6 /* FoodSearchAppTests.swift */; };
 		9A0B0DD0252A3AAA00BF0DA6 /* FoodSearchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0DCF252A3AAA00BF0DA6 /* FoodSearchAppUITests.swift */; };
+		9A0B0DEC252A3ED700BF0DA6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0DEB252A3ED700BF0DA6 /* MainCoordinator.swift */; };
+		9A0B0DF4252A400B00BF0DA6 /* Startable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0DF3252A400B00BF0DA6 /* Startable.swift */; };
+		9A0B0E00252A410600BF0DA6 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0DFE252A410600BF0DA6 /* MainSearchViewController.swift */; };
+		9A0B0E01252A410600BF0DA6 /* MainSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A0B0DFF252A410600BF0DA6 /* MainSearchViewController.xib */; };
+		9A0B0E0B252A47C800BF0DA6 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E0A252A47C800BF0DA6 /* BaseService.swift */; };
+		9A0B0E16252A4B7F00BF0DA6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E15252A4B7F00BF0DA6 /* MainViewModel.swift */; };
+		9A0B0E1C252A50EE00BF0DA6 /* MealServiceResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E1B252A50EE00BF0DA6 /* MealServiceResponseModel.swift */; };
+		9A0B0E25252A544800BF0DA6 /* URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E24252A544800BF0DA6 /* URLRequestConvertible.swift */; };
+		9A0B0E30252A54A000BF0DA6 /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E2F252A54A000BF0DA6 /* MealService.swift */; };
+		9A0B0E35252A551200BF0DA6 /* MealServiceConcrete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E34252A551200BF0DA6 /* MealServiceConcrete.swift */; };
+		9A0B0E3A252A55F400BF0DA6 /* MealServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E39252A55F400BF0DA6 /* MealServiceRouter.swift */; };
+		9A0B0E3F252A59AF00BF0DA6 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E3E252A59AF00BF0DA6 /* DynamicValue.swift */; };
+		9A0B0E44252A5A0E00BF0DA6 /* GenericDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0B0E43252A5A0E00BF0DA6 /* GenericDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +49,6 @@
 		9A0B0DAA252A3AA900BF0DA6 /* FoodSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0B0DAD252A3AA900BF0DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A0B0DAF252A3AA900BF0DA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A0B0DB1252A3AA900BF0DA6 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
-		9A0B0DB4252A3AA900BF0DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainSearchView.storyboard; sourceTree = "<group>"; };
 		9A0B0DB6252A3AAA00BF0DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A0B0DB9252A3AAA00BF0DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0B0DBB252A3AAA00BF0DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +58,19 @@
 		9A0B0DCB252A3AAA00BF0DA6 /* FoodSearchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodSearchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A0B0DCF252A3AAA00BF0DA6 /* FoodSearchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchAppUITests.swift; sourceTree = "<group>"; };
 		9A0B0DD1252A3AAA00BF0DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A0B0DEB252A3ED700BF0DA6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		9A0B0DF3252A400B00BF0DA6 /* Startable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startable.swift; sourceTree = "<group>"; };
+		9A0B0DFE252A410600BF0DA6 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
+		9A0B0DFF252A410600BF0DA6 /* MainSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSearchViewController.xib; sourceTree = "<group>"; };
+		9A0B0E0A252A47C800BF0DA6 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		9A0B0E15252A4B7F00BF0DA6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9A0B0E1B252A50EE00BF0DA6 /* MealServiceResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealServiceResponseModel.swift; sourceTree = "<group>"; };
+		9A0B0E24252A544800BF0DA6 /* URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestConvertible.swift; sourceTree = "<group>"; };
+		9A0B0E2F252A54A000BF0DA6 /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
+		9A0B0E34252A551200BF0DA6 /* MealServiceConcrete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealServiceConcrete.swift; sourceTree = "<group>"; };
+		9A0B0E39252A55F400BF0DA6 /* MealServiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealServiceRouter.swift; sourceTree = "<group>"; };
+		9A0B0E3E252A59AF00BF0DA6 /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		9A0B0E43252A5A0E00BF0DA6 /* GenericDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +121,11 @@
 		9A0B0DAC252A3AA900BF0DA6 /* FoodSearchApp */ = {
 			isa = PBXGroup;
 			children = (
+				9A0B0E08252A479300BF0DA6 /* Core */,
 				9A0B0DE6252A3BDF00BF0DA6 /* Coordinators */,
+				9A0B0E1A252A509B00BF0DA6 /* Models */,
 				9A0B0DE7252A3BE700BF0DA6 /* ViewControllers */,
+				9A0B0E14252A4B6800BF0DA6 /* ViewModel */,
 				9A0B0DAD252A3AA900BF0DA6 /* AppDelegate.swift */,
 				9A0B0DAF252A3AA900BF0DA6 /* SceneDelegate.swift */,
 				9A0B0DB6252A3AAA00BF0DA6 /* Assets.xcassets */,
@@ -131,6 +156,8 @@
 		9A0B0DE6252A3BDF00BF0DA6 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				9A0B0DF0252A3F7B00BF0DA6 /* protocols */,
+				9A0B0DEB252A3ED700BF0DA6 /* MainCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -138,10 +165,64 @@
 		9A0B0DE7252A3BE700BF0DA6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9A0B0DB1252A3AA900BF0DA6 /* MainSearchViewController.swift */,
-				9A0B0DB3252A3AA900BF0DA6 /* MainSearchView.storyboard */,
+				9A0B0DFE252A410600BF0DA6 /* MainSearchViewController.swift */,
+				9A0B0DFF252A410600BF0DA6 /* MainSearchViewController.xib */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9A0B0DF0252A3F7B00BF0DA6 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B0DF3252A400B00BF0DA6 /* Startable.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		9A0B0E08252A479300BF0DA6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B0E09252A479C00BF0DA6 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9A0B0E09252A479C00BF0DA6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B0E23252A543000BF0DA6 /* protocols */,
+				9A0B0E0A252A47C800BF0DA6 /* BaseService.swift */,
+				9A0B0E34252A551200BF0DA6 /* MealServiceConcrete.swift */,
+				9A0B0E39252A55F400BF0DA6 /* MealServiceRouter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9A0B0E14252A4B6800BF0DA6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B0E15252A4B7F00BF0DA6 /* MainViewModel.swift */,
+				9A0B0E3E252A59AF00BF0DA6 /* DynamicValue.swift */,
+				9A0B0E43252A5A0E00BF0DA6 /* GenericDatasource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9A0B0E1A252A509B00BF0DA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B0E1B252A50EE00BF0DA6 /* MealServiceResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A0B0E23252A543000BF0DA6 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9A0B0E24252A544800BF0DA6 /* URLRequestConvertible.swift */,
+				9A0B0E2F252A54A000BF0DA6 /* MealService.swift */,
+			);
+			path = protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,8 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0B0DBA252A3AAA00BF0DA6 /* LaunchScreen.storyboard in Resources */,
+				9A0B0E01252A410600BF0DA6 /* MainSearchViewController.xib in Resources */,
 				9A0B0DB7252A3AAA00BF0DA6 /* Assets.xcassets in Resources */,
-				9A0B0DB5252A3AA900BF0DA6 /* MainSearchView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +355,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A0B0DB2252A3AA900BF0DA6 /* MainSearchViewController.swift in Sources */,
+				9A0B0E16252A4B7F00BF0DA6 /* MainViewModel.swift in Sources */,
+				9A0B0DF4252A400B00BF0DA6 /* Startable.swift in Sources */,
+				9A0B0DEC252A3ED700BF0DA6 /* MainCoordinator.swift in Sources */,
+				9A0B0E35252A551200BF0DA6 /* MealServiceConcrete.swift in Sources */,
+				9A0B0E44252A5A0E00BF0DA6 /* GenericDatasource.swift in Sources */,
+				9A0B0E3F252A59AF00BF0DA6 /* DynamicValue.swift in Sources */,
+				9A0B0E0B252A47C800BF0DA6 /* BaseService.swift in Sources */,
+				9A0B0E25252A544800BF0DA6 /* URLRequestConvertible.swift in Sources */,
+				9A0B0E1C252A50EE00BF0DA6 /* MealServiceResponseModel.swift in Sources */,
 				9A0B0DAE252A3AA900BF0DA6 /* AppDelegate.swift in Sources */,
 				9A0B0DB0252A3AA900BF0DA6 /* SceneDelegate.swift in Sources */,
+				9A0B0E30252A54A000BF0DA6 /* MealService.swift in Sources */,
+				9A0B0E00252A410600BF0DA6 /* MainSearchViewController.swift in Sources */,
+				9A0B0E3A252A55F400BF0DA6 /* MealServiceRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,14 +404,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9A0B0DB3252A3AA900BF0DA6 /* MainSearchView.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A0B0DB4252A3AA900BF0DA6 /* Base */,
-			);
-			name = MainSearchView.storyboard;
-			sourceTree = "<group>";
-		};
 		9A0B0DB8252A3AAA00BF0DA6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
